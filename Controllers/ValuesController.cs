@@ -33,6 +33,7 @@ namespace BarCodeGenerator.Controllers
                 responseBody = new ResponseBody()
                 {
                     Message = Ex.Message,
+                    DetailError = Ex.InnerException.StackTrace,
                     Status = 500,
                     BarCodeInformation = null
                 };

@@ -10,6 +10,7 @@ namespace BarCodeGenerator.BarCodeGenerator
     {
         public int Status { get; set; }
         public string Message { get; set; }
+        public string DetailError { get; set; }
         public BarCodeInformation BarCodeInformation { get; set; }
     }
 

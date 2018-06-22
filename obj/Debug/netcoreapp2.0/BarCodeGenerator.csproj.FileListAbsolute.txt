@@ -3,9 +3,9 @@ E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\bin\Debug\netcoreapp2.0\BarC
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\bin\Debug\netcoreapp2.0\BarCodeGenerator.runtimeconfig.dev.json
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\bin\Debug\netcoreapp2.0\BarCodeGenerator.dll
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\bin\Debug\netcoreapp2.0\BarCodeGenerator.pdb
+E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.csprojResolveAssemblyReference.cache
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.csproj.CoreCompileInputs.cache
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.AssemblyInfoInputs.cache
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.AssemblyInfo.cs
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.dll
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.pdb
-E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.csprojResolveAssemblyReference.cache
