@@ -8,3 +8,4 @@ E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarC
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.AssemblyInfo.cs
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.dll
 E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.pdb
+E:\MyApps\BarCode\BarCodeGenerator\BarCodeGenerator\obj\Debug\netcoreapp2.0\BarCodeGenerator.csprojResolveAssemblyReference.cache

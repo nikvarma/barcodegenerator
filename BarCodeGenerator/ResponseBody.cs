@@ -17,6 +17,6 @@ namespace BarCodeGenerator.BarCodeGenerator
     {
         public object Data { get; set; }
         public string Base64String { get; set; }
-        public ImageFormat ImageFormat { get; set; }
+        public string ImageFormat { get; set; }
     }
 }

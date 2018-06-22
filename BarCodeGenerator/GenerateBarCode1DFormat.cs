@@ -34,7 +34,7 @@ namespace BarCodeGenerator.BarCodeGenerator
                     barCodeData.Base64String = Convert.ToBase64String(imageBytes);
                 }
                 barCodeData.Data = barCodeSettings.BarCodeText;
-                barCodeData.ImageFormat = barCodeSettings.ImageFormat;
+                barCodeData.ImageFormat = barCodeSettings.ImageFormat.ToString();
             });
             return (T)Convert.ChangeType(barCodeData, typeof(T));
         }
@@ -63,7 +63,7 @@ namespace BarCodeGenerator.BarCodeGenerator
                     barCodeData.Base64String = Convert.ToBase64String(imageBytes);
                 }
                 barCodeData.Data = barCodeSettings.BarCodeText;
-                barCodeData.ImageFormat = barCodeSettings.ImageFormat;
+                barCodeData.ImageFormat = barCodeSettings.ImageFormat.ToString();
             });
             return (T)Convert.ChangeType(barCodeData, typeof(T));
         }
