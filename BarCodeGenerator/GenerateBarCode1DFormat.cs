@@ -27,7 +27,12 @@ namespace BarCodeGenerator.BarCodeGenerator
                 oGraphics.DrawString("*" + barCodeSettings.BarCodeText + "*", oFont, oBrushWrite, oPoint);
                 //oBitmap.Save(imagePath, imageFormat);
                 //Image image = Image.FromFile(imagePath);
-                
+                using (MemoryStream memoryStram = new MemoryStream())
+                {
+                    oBitmap.Save(memoryStram, imageFormat);
+                    byte[] imageBytes = memoryStram.ToArray();
+                    barCodeData.Base64String = Convert.ToBase64String(imageBytes);
+                }
                 barCodeData.Data = barCodeSettings.BarCodeText;
                 barCodeData.ImageFormat = barCodeSettings.ImageFormat.ToString();
             });
