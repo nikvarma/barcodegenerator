@@ -25,11 +25,11 @@ namespace BarCodeGenerator.BarCodeGenerator
                 SolidBrush oBrush = new SolidBrush(barCodeSettings.BackgroundColor);
                 oGraphics.FillRectangle(oBrush, 0, 0, barCodeSettings.Width, barCodeSettings.Height);
                 oGraphics.DrawString("*" + barCodeSettings.BarCodeText + "*", oFont, oBrushWrite, oPoint);
-                oBitmap.Save(imagePath, imageFormat);
-                Image image = Image.FromFile(imagePath);
+                //oBitmap.Save(imagePath, imageFormat);
+                //Image image = Image.FromFile(imagePath);
                 using (MemoryStream memoryStram = new MemoryStream())
                 {
-                    image.Save(memoryStram, imageFormat);
+                    oBitmap.Save(memoryStram, imageFormat);
                     byte[] imageBytes = memoryStram.ToArray();
                     barCodeData.Base64String = Convert.ToBase64String(imageBytes);
                 }
