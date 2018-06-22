@@ -16,25 +16,7 @@ namespace BarCodeGenerator.BarCodeGenerator
             BarCodeInformation barCodeData = new BarCodeInformation();
             string imagePath = Lib.ImagesServerPath(barCodeSettings.ImageFormat);
             await Task.Run(() => {
-                PointF oPoint = new PointF(2f, 2f);
-                ImageFormat imageFormat = barCodeSettings.ImageFormat;
-                Bitmap oBitmap = new Bitmap(barCodeSettings.Width, barCodeSettings.Height);
-                Graphics oGraphics = Graphics.FromImage(oBitmap);
-                SolidBrush oBrushWrite = new SolidBrush(barCodeSettings.ForeColor);
-                Font oFont = new Font(Lib.FontsFamily(), barCodeSettings.FontSize);
-                SolidBrush oBrush = new SolidBrush(barCodeSettings.BackgroundColor);
-                oGraphics.FillRectangle(oBrush, 0, 0, barCodeSettings.Width, barCodeSettings.Height);
-                oGraphics.DrawString("*" + barCodeSettings.BarCodeText + "*", oFont, oBrushWrite, oPoint);
-                //oBitmap.Save(imagePath, imageFormat);
-                //Image image = Image.FromFile(imagePath);
-                using (MemoryStream memoryStram = new MemoryStream())
-                {
-                    oBitmap.Save(memoryStram, imageFormat);
-                    byte[] imageBytes = memoryStram.ToArray();
-                    barCodeData.Base64String = Convert.ToBase64String(imageBytes);
-                }
-                barCodeData.Data = barCodeSettings.BarCodeText;
-                barCodeData.ImageFormat = barCodeSettings.ImageFormat.ToString();
+                
             });
             return (T)Convert.ChangeType(barCodeData, typeof(T));
         }
